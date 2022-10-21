@@ -23,11 +23,11 @@ export const useKeyboard = () => {
         moveLeft: false,
         moveRight: false,
         jump: false,
-        Texture1: false,
-        Texture2: false,
-        Texture3: false,
-        Texture4: false,
-        Texture5: false,
+        dirt: false,
+        grass: false,
+        glass: false,
+        wood: false,
+        log: false,
 
     })
 
