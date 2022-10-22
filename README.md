@@ -10,4 +10,4 @@ Alt + Mouse click to remove a cube.
 Numbers 1, 2, 3, 4, 5 to select different types of texture of cubes.
 Note:- Numbers mapped are not from the numpad on right of keyboard but from the top.
 
-Hosted project link is :- <a href="https://minecraft-react-project.netlify.app" />
+<div>Hosted project link is :- <a href="https://minecraft-react-project.netlify.app" /> </div>
