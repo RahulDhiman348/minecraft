@@ -1,4 +1,4 @@
-This is a Minceraft Basic game made in Threejs
+<h3>This is a Minceraft Basic game made in Threejs</h3>
 
 Controls:-
 User first click on screen to get into first person mode.
