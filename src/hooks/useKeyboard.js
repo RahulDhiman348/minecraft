@@ -17,7 +17,7 @@ function actionByKey(key) {
 }
 
 export const useKeyboard = () => {
-    const[actions, setActions]=  useState({
+    const [actions, setActions] = useState({
         moveForward: false,
         moveBackward: false,
         moveLeft: false,
@@ -31,10 +31,9 @@ export const useKeyboard = () => {
 
     })
 
-    const handleKeyDown = useCallback(
-      (e) => {
+    const handleKeyDown = useCallback((e) => {
         const action = actionByKey(e.code)
-        if(action){
+        if (action) {
             setActions((prev) => {
                 return ({
                     ...prev,
@@ -42,15 +41,12 @@ export const useKeyboard = () => {
                 })
             })
         }
-      },
-      [],
-    )
-    
-    
-    const handleKeyUp = useCallback(
-        (e) => {
-            const action = actionByKey(e.code)
-        if(action){
+    }, [])
+
+
+    const handleKeyUp = useCallback((e) => {
+        const action = actionByKey(e.code)
+        if (action) {
             setActions((prev) => {
                 return ({
                     ...prev,
@@ -58,12 +54,9 @@ export const useKeyboard = () => {
                 })
             })
         }
-          
-        },
-        [],
-      )
+    }, [])
 
-    useEffect(()=> {
+    useEffect(() => {
         document.addEventListener('keydown', handleKeyDown);
         document.addEventListener('keyup', handleKeyUp);
         return () => {

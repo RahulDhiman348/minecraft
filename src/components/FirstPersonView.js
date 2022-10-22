@@ -4,5 +4,5 @@ import { useThree } from "@react-three/fiber";
 export const FirstPersonView = () => {
     const { camera, gl } = useThree()
 
-    return(<PointerLockControls args={[camera, gl.domElement]} />)
+    return (<PointerLockControls args={[camera, gl.domElement]} />)
 }

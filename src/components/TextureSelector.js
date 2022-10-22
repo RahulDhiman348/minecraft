@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useKeyboard } from '../hooks/useKeyboard';
 import { useStore } from '../hooks/useStore';
 import { dirtImg, grassImg, glassImg, logImg, woodImg } from '../images/images';
@@ -17,9 +17,7 @@ export const TextureSelector = () => {
     const { dirt, grass, glass, wood, log } = useKeyboard();
 
     useEffect(() => {
-        const textures = {
-            dirt, grass, glass, wood, log
-        }
+        const textures = { dirt, grass, glass, wood, log }
         const pressedTexture = Object.entries(textures).find(([k, v]) => v);
         if (pressedTexture) {
             setTexture(pressedTexture[0])
